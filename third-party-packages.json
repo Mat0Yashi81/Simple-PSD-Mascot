@@ -1,0 +1,279 @@
+[
+  {
+    "name": "altgraph",
+    "version": "0.17.5",
+    "license": "MIT",
+    "license_files": [
+      "licenses/python-packages/altgraph/LICENSE"
+    ],
+    "requires": []
+  },
+  {
+    "name": "attrs",
+    "version": "26.1.0",
+    "license": "MIT",
+    "license_files": [
+      "licenses/python-packages/attrs/licenses/LICENSE"
+    ],
+    "requires": []
+  },
+  {
+    "name": "numpy",
+    "version": "2.5.4",
+    "license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+    "license_files": [
+      "licenses/python-packages/numpy/licenses/LICENSE.txt",
+      "licenses/python-packages/numpy/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+      "licenses/python-packages/numpy/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+      "licenses/python-packages/numpy/licenses/numpy/_core/src/highway/LICENSE",
+      "licenses/python-packages/numpy/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+      "licenses/python-packages/numpy/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+      "licenses/python-packages/numpy/licenses/numpy/_core/src/umath/svml/LICENSE",
+      "licenses/python-packages/numpy/licenses/numpy/fft/pocketfft/LICENSE.md",
+      "licenses/python-packages/numpy/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+      "licenses/python-packages/numpy/licenses/numpy/ma/LICENSE",
+      "licenses/python-packages/numpy/licenses/numpy/random/LICENSE.md",
+      "licenses/python-packages/numpy/licenses/numpy/random/src/distributions/LICENSE.md",
+      "licenses/python-packages/numpy/licenses/numpy/random/src/mt19937/LICENSE.md",
+      "licenses/python-packages/numpy/licenses/numpy/random/src/pcg64/LICENSE.md",
+      "licenses/python-packages/numpy/licenses/numpy/random/src/philox/LICENSE.md",
+      "licenses/python-packages/numpy/licenses/numpy/random/src/sfc64/LICENSE.md",
+      "licenses/python-packages/numpy/licenses/numpy/random/src/splitmix64/LICENSE.md"
+    ],
+    "requires": []
+  },
+  {
+    "name": "packaging",
+    "version": "26.3",
+    "license": "Apache-2.0 OR BSD-2-Clause",
+    "license_files": [
+      "licenses/python-packages/packaging/licenses/LICENSE",
+      "licenses/python-packages/packaging/licenses/LICENSE.APACHE",
+      "licenses/python-packages/packaging/licenses/LICENSE.BSD"
+    ],
+    "requires": []
+  },
+  {
+    "name": "pefile",
+    "version": "2024.8.26",
+    "license": "MIT",
+    "license_files": [
+      "licenses/python-packages/pefile/LICENSE"
+    ],
+    "requires": []
+  },
+  {
+    "name": "pillow",
+    "version": "13.0.0",
+    "license": "MIT-CMU",
+    "license_files": [
+      "licenses/python-packages/pillow/licenses/LICENSE"
+    ],
+    "requires": [
+      "furo; extra == \"docs\"",
+      "olefile; extra == \"docs\"",
+      "sphinx>=8.2; extra == \"docs\"",
+      "sphinx-autobuild; extra == \"docs\"",
+      "sphinx-copybutton; extra == \"docs\"",
+      "sphinx-inline-tabs; extra == \"docs\"",
+      "sphinxext-opengraph; extra == \"docs\"",
+      "olefile; extra == \"fpx\"",
+      "olefile; extra == \"mic\"",
+      "arro3-compute; extra == \"test-arrow\"",
+      "arro3-core; extra == \"test-arrow\"",
+      "nanoarrow; extra == \"test-arrow\"",
+      "pyarrow; extra == \"test-arrow\"",
+      "coverage>=7.4.2; extra == \"tests\"",
+      "defusedxml; extra == \"tests\"",
+      "markdown2; extra == \"tests\"",
+      "olefile; extra == \"tests\"",
+      "packaging; extra == \"tests\"",
+      "psutil; (sys_platform == \"linux\" or sys_platform == \"darwin\") and extra == \"tests\"",
+      "pytest; extra == \"tests\"",
+      "pytest-cov; extra == \"tests\"",
+      "pytest-timeout; extra == \"tests\"",
+      "pytest-xdist; extra == \"tests\"",
+      "setuptools; extra == \"tests\"",
+      "trove-classifiers>=2024.10.12; extra == \"tests\"",
+      "defusedxml; extra == \"xmp\""
+    ]
+  },
+  {
+    "name": "psd-tools",
+    "version": "1.26.0",
+    "license": "MIT",
+    "license_files": [
+      "licenses/python-packages/psd-tools/licenses/LICENSE"
+    ],
+    "requires": [
+      "attrs>=23.0.0",
+      "Pillow>=10.3.0",
+      "numpy>=1.22",
+      "aggdraw>=1.4.1; sys_platform != \"win32\" and extra == \"composite\"",
+      "aggdraw>=1.4.1; sys_platform == \"win32\" and extra == \"composite\"",
+      "scipy>=1.9; extra == \"composite\""
+    ]
+  },
+  {
+    "name": "pyinstaller",
+    "version": "6.22.3",
+    "license": "GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones)",
+    "license_files": [
+      "licenses/python-packages/pyinstaller/licenses/COPYING.txt"
+    ],
+    "requires": [
+      "altgraph",
+      "importlib-metadata>=4.6; python_version < '3.10'",
+      "macholib>=1.8; sys_platform == 'darwin'",
+      "packaging>=22.0",
+      "pefile>=2022.5.30; sys_platform == 'win32'",
+      "pyinstaller-hooks-contrib>=2026.7",
+      "pywin32-ctypes>=0.2.1; sys_platform == 'win32'",
+      "setuptools>=42.0.0",
+      "argcomplete; extra == 'completion'",
+      "execnet>=1.5.0; extra == 'hook-testing'",
+      "psutil; extra == 'hook-testing'",
+      "pytest>=2.7.3; extra == 'hook-testing'"
+    ]
+  },
+  {
+    "name": "pyinstaller-hooks-contrib",
+    "version": "2026.9",
+    "license": "GPL-2.0-or-later (standard hooks); Apache-2.0 (runtime hooks)",
+    "license_files": [
+      "licenses/python-packages/pyinstaller-hooks-contrib/licenses/LICENSE"
+    ],
+    "requires": [
+      "importlib_metadata>=4.6; python_version < \"3.10\"",
+      "packaging>=22.0"
+    ]
+  },
+  {
+    "name": "PySide6",
+    "version": "6.7.3",
+    "license": "LGPL",
+    "license_files": [
+      "licenses/python-packages/PySide6/LicenseRef-Qt-Commercial.txt"
+    ],
+    "requires": [
+      "shiboken6 ==6.7.3",
+      "PySide6-Essentials ==6.7.3",
+      "PySide6-Addons ==6.7.3"
+    ]
+  },
+  {
+    "name": "PySide6_Addons",
+    "version": "6.7.3",
+    "license": "LGPL",
+    "license_files": [
+      "licenses/python-packages/PySide6_Addons/LicenseRef-Qt-Commercial.txt"
+    ],
+    "requires": [
+      "shiboken6 ==6.7.3",
+      "PySide6-Essentials ==6.7.3"
+    ]
+  },
+  {
+    "name": "PySide6_Essentials",
+    "version": "6.7.3",
+    "license": "LGPL",
+    "license_files": [
+      "licenses/python-packages/PySide6_Essentials/LicenseRef-Qt-Commercial.txt"
+    ],
+    "requires": [
+      "shiboken6 ==6.7.3"
+    ]
+  },
+  {
+    "name": "pywin32-ctypes",
+    "version": "0.2.3",
+    "license": "BSD-3-Clause",
+    "license_files": [
+      "licenses/python-packages/pywin32-ctypes/LICENSE.txt"
+    ],
+    "requires": []
+  },
+  {
+    "name": "setuptools",
+    "version": "84.2.1",
+    "license": "MIT",
+    "license_files": [
+      "licenses/python-packages/setuptools/licenses/LICENSE",
+      "licenses/python-packages/setuptools/LICENSE",
+      "licenses/python-packages/setuptools/LICENSE",
+      "licenses/python-packages/setuptools/licenses/LICENSE",
+      "licenses/python-packages/setuptools/LICENSE",
+      "licenses/python-packages/setuptools/licenses/LICENSE",
+      "licenses/python-packages/setuptools/licenses/LICENSE",
+      "licenses/python-packages/setuptools/licenses/LICENSE",
+      "licenses/python-packages/setuptools/licenses/LICENSE",
+      "licenses/python-packages/setuptools/licenses/LICENSE.APACHE",
+      "licenses/python-packages/setuptools/licenses/LICENSE.BSD",
+      "licenses/python-packages/setuptools/licenses/LICENSE",
+      "licenses/python-packages/setuptools/licenses/LICENSE",
+      "licenses/python-packages/setuptools/licenses/LICENSE.txt",
+      "licenses/python-packages/setuptools/licenses/LICENSE"
+    ],
+    "requires": [
+      "pytest!=8.1.*,>=6; extra == \"test\"",
+      "virtualenv>=13.0.0; extra == \"test\"",
+      "wheel>=0.44.0; extra == \"test\"",
+      "pip>=19.1; extra == \"test\"",
+      "packaging>=26.3; extra == \"test\"",
+      "jaraco.envs>=2.2; extra == \"test\"",
+      "pytest-xdist>=3; extra == \"test\"",
+      "jaraco.path>=3.7.2; extra == \"test\"",
+      "build[virtualenv]>=1.0.3; extra == \"test\"",
+      "filelock>=3.4.0; extra == \"test\"",
+      "ini2toml[lite]>=0.14; extra == \"test\"",
+      "tomli-w>=1.0.0; extra == \"test\"",
+      "pytest-timeout; extra == \"test\"",
+      "pytest-perf; sys_platform != \"cygwin\" and extra == \"test\"",
+      "jaraco.develop>=7.21; (python_version >= \"3.9\" and sys_platform != \"cygwin\") and extra == \"test\"",
+      "pytest-home>=0.5; extra == \"test\"",
+      "pytest-subprocess; extra == \"test\"",
+      "pyproject-hooks!=1.1; extra == \"test\"",
+      "jaraco.test>=5.5; extra == \"test\"",
+      "sphinx>=3.5; extra == \"doc\"",
+      "jaraco.packaging>=9.3; extra == \"doc\"",
+      "rst.linker>=1.9; extra == \"doc\"",
+      "furo; extra == \"doc\"",
+      "sphinx-lint; extra == \"doc\"",
+      "jaraco.tidelift>=1.4; extra == \"doc\"",
+      "pygments-github-lexers==0.0.5; extra == \"doc\"",
+      "sphinx-favicon; extra == \"doc\"",
+      "sphinx-inline-tabs; extra == \"doc\"",
+      "sphinx-reredirects; extra == \"doc\"",
+      "sphinxcontrib-towncrier; extra == \"doc\"",
+      "sphinx-notfound-page<2,>=1; extra == \"doc\"",
+      "pyproject-hooks!=1.1; extra == \"doc\"",
+      "towncrier<24.7; extra == \"doc\"",
+      "packaging>=26.3; extra == \"core\"",
+      "more_itertools>=8.8; extra == \"core\"",
+      "jaraco.text>=3.7; extra == \"core\"",
+      "importlib_metadata>=6; python_version < \"3.10\" and extra == \"core\"",
+      "tomli>=2.0.1; python_version < \"3.11\" and extra == \"core\"",
+      "wheel>=0.43.0; extra == \"core\"",
+      "jaraco.functools>=4; extra == \"core\"",
+      "more_itertools; extra == \"core\"",
+      "pytest-checkdocs>=2.14; extra == \"check\"",
+      "pytest-ruff>=0.2.1; sys_platform != \"cygwin\" and extra == \"check\"",
+      "ruff>=0.13.0; sys_platform != \"cygwin\" and extra == \"check\"",
+      "pytest-cov; extra == \"cover\"",
+      "pytest-enabler>=3.4; extra == \"enabler\"",
+      "pytest-mypy>=1.0.1; platform_python_implementation != \"PyPy\" and extra == \"type\"",
+      "mypy==1.18.*; extra == \"type\"",
+      "importlib_metadata>=7.0.2; python_version < \"3.10\" and extra == \"type\"",
+      "jaraco.develop>=7.21; sys_platform != \"cygwin\" and extra == \"type\""
+    ]
+  },
+  {
+    "name": "shiboken6",
+    "version": "6.7.3",
+    "license": "LGPL",
+    "license_files": [
+      "licenses/python-packages/shiboken6/LicenseRef-Qt-Commercial.txt"
+    ],
+    "requires": []
+  }
+]

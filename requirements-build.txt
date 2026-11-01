@@ -1,0 +1,6 @@
+PySide6==6.7.3
+psd-tools==1.26.0
+Pillow==13.0.0
+PyInstaller==6.22.3
+
+numpy==2.5.4

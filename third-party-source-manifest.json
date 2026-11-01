@@ -1,0 +1,142 @@
+[
+  {
+    "file": "pillow-13.0.0.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/ce/a4/9cc30690a394a8305e8be4c9036aa16d0dfddadd09079860b582f562496d/pillow-13.0.0.tar.gz",
+    "sha256": "cdcd1ba258178f7356d74170c9a81ba4eab6a5d55748bc402a5a2a6fe6be3510",
+    "upstream_sha256": "cdcd1ba258178f7356d74170c9a81ba4eab6a5d55748bc402a5a2a6fe6be3510",
+    "size": 47058631
+  },
+  {
+    "file": "numpy-2.5.4.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/95/b0/c7453d0b6e2073c3264468b106ee1563750cecc910965e67357e3698c83e/numpy-2.5.4.tar.gz",
+    "sha256": "9a94cf751c9ad8ebaa835bcd3d40dacf8534ad086b88c38029b65123c7999d2a",
+    "upstream_sha256": "9a94cf751c9ad8ebaa835bcd3d40dacf8534ad086b88c38029b65123c7999d2a",
+    "size": 20866315
+  },
+  {
+    "file": "attrs-26.1.0.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/9a/8e/82a0fe20a541c03148528be8cac2408564a6c9a0cc7e9171802bc1d26985/attrs-26.1.0.tar.gz",
+    "sha256": "d03ceb89cb322a8fd706d4fb91940737b6642aa36998fe130a9bc96c985eff32",
+    "upstream_sha256": "d03ceb89cb322a8fd706d4fb91940737b6642aa36998fe130a9bc96c985eff32",
+    "size": 952055
+  },
+  {
+    "file": "pyinstaller-6.22.3.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/63/41/f90302845945abd4ed647933ff5ee7c6ac93983187be67f897b6cb613331/pyinstaller-6.22.3.tar.gz",
+    "sha256": "05eb2f5615503e72939a7224d68b4aff572c6b0438ee4a17d0a4b481f399362d",
+    "upstream_sha256": "05eb2f5615503e72939a7224d68b4aff572c6b0438ee4a17d0a4b481f399362d",
+    "size": 4437180
+  },
+  {
+    "file": "pyinstaller_hooks_contrib-2026.9.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/96/25/e47c6188228281372be7e9911a93931e01ec8798c02c93abd680b9b9521f/pyinstaller_hooks_contrib-2026.9.tar.gz",
+    "sha256": "2748767901acb5cecd1304652b6c7add5bffcff1d71d01207fe24a5d42942a56",
+    "upstream_sha256": "2748767901acb5cecd1304652b6c7add5bffcff1d71d01207fe24a5d42942a56",
+    "size": 180783
+  },
+  {
+    "file": "altgraph-0.17.5.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/7e/f8/97fdf103f38fed6792a1601dbc16cc8aac56e7459a9fff08c812d8ae177a/altgraph-0.17.5.tar.gz",
+    "sha256": "c87b395dd12fabde9c99573a9749d67da8d29ef9de0125c7f536699b4a9bc9e7",
+    "upstream_sha256": "c87b395dd12fabde9c99573a9749d67da8d29ef9de0125c7f536699b4a9bc9e7",
+    "size": 48428
+  },
+  {
+    "file": "packaging-26.3.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/7d/fa/3944b40b07da9ce895c0e6303a5ab7d53da063554f534556b134a54d6093/packaging-26.3.tar.gz",
+    "sha256": "94edc256424af38762eb31306eed28beb9f0efc50a8837492c9d6fd6004aed79",
+    "upstream_sha256": "94edc256424af38762eb31306eed28beb9f0efc50a8837492c9d6fd6004aed79",
+    "size": 313412
+  },
+  {
+    "file": "pefile-2024.8.26.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/03/4f/2750f7f6f025a1507cd3b7218691671eecfd0bbebebe8b39aa0fe1d360b8/pefile-2024.8.26.tar.gz",
+    "sha256": "3ff6c5d8b43e8c37bb6e6dd5085658d658a7a0bdcd20b6a07b1fcfc1c4e9d632",
+    "upstream_sha256": "3ff6c5d8b43e8c37bb6e6dd5085658d658a7a0bdcd20b6a07b1fcfc1c4e9d632",
+    "size": 76008
+  },
+  {
+    "file": "pywin32-ctypes-0.2.3.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/85/9f/01a1a99704853cb63f253eea009390c88e7131c67e66a0a02099a8c917cb/pywin32-ctypes-0.2.3.tar.gz",
+    "sha256": "d162dc04946d704503b2edc4d55f3dba5c1d539ead017afa00142c38b9885755",
+    "upstream_sha256": "d162dc04946d704503b2edc4d55f3dba5c1d539ead017afa00142c38b9885755",
+    "size": 29471
+  },
+  {
+    "file": "qtbase-everywhere-src-6.7.3.tar.xz",
+    "url": "https://download.qt.io/archive/qt/6.7/6.7.3/submodules/qtbase-everywhere-src-6.7.3.tar.xz",
+    "sha256": "8ccbb9ab055205ac76632c9eeddd1ed6fc66936fc56afc2ed0fd5d9e23da3097",
+    "upstream_sha256": null,
+    "size": 49426156
+  },
+  {
+    "file": "qtdeclarative-everywhere-src-6.7.3.tar.xz",
+    "url": "https://download.qt.io/archive/qt/6.7/6.7.3/submodules/qtdeclarative-everywhere-src-6.7.3.tar.xz",
+    "sha256": "937b70e441abf5bc4e50d44d26610e2714a28514acf3885cd36116cd610b9875",
+    "upstream_sha256": null,
+    "size": 35663596
+  },
+  {
+    "file": "qtmultimedia-everywhere-src-6.7.3.tar.xz",
+    "url": "https://download.qt.io/archive/qt/6.7/6.7.3/submodules/qtmultimedia-everywhere-src-6.7.3.tar.xz",
+    "sha256": "304d28b8e592435293893b0110d5f3534407604d1e04d8a0b0e5b34afe577303",
+    "upstream_sha256": null,
+    "size": 9360356
+  },
+  {
+    "file": "qtsvg-everywhere-src-6.7.3.tar.xz",
+    "url": "https://download.qt.io/archive/qt/6.7/6.7.3/submodules/qtsvg-everywhere-src-6.7.3.tar.xz",
+    "sha256": "40142cb71fb1e07ad612bc361b67f5d54cd9367f9979ae6b86124a064deda06b",
+    "upstream_sha256": null,
+    "size": 1792980
+  },
+  {
+    "file": "qtimageformats-everywhere-src-6.7.3.tar.xz",
+    "url": "https://download.qt.io/archive/qt/6.7/6.7.3/submodules/qtimageformats-everywhere-src-6.7.3.tar.xz",
+    "sha256": "9fd58144081654c3373768dd96ead294023830927b14fe3d3c1ef641fb324753",
+    "upstream_sha256": null,
+    "size": 1974700
+  },
+  {
+    "file": "qtshadertools-everywhere-src-6.7.3.tar.xz",
+    "url": "https://download.qt.io/archive/qt/6.7/6.7.3/submodules/qtshadertools-everywhere-src-6.7.3.tar.xz",
+    "sha256": "74e512798c7ddbda354a2d8d975211454bbabb47afb7e598892067a5828c0995",
+    "upstream_sha256": null,
+    "size": 1111640
+  },
+  {
+    "file": "qttranslations-everywhere-src-6.7.3.tar.xz",
+    "url": "https://download.qt.io/archive/qt/6.7/6.7.3/submodules/qttranslations-everywhere-src-6.7.3.tar.xz",
+    "sha256": "dcc762acac043b9bb5e4d369b6d6f53e0ecfcf76a408fe0db5f7ef071c9d6dc8",
+    "upstream_sha256": null,
+    "size": 1547944
+  },
+  {
+    "file": "pyside-setup-everywhere-src-6.7.3.tar.xz",
+    "url": "https://download.qt.io/official_releases/QtForPython/pyside6/PySide6-6.7.3-src/pyside-setup-everywhere-src-6.7.3.tar.xz",
+    "sha256": "a4c414be013d5051a2d10a9a1151e686488a3172c08a57461ea04b0a0ab74e09",
+    "upstream_sha256": null,
+    "size": 14591496
+  },
+  {
+    "file": "Python-3.12.0.tar.xz",
+    "url": "https://www.python.org/ftp/python/3.12.0/Python-3.12.0.tar.xz",
+    "sha256": "795c34f44df45a0e9b9710c8c71c15c671871524cd412ca14def212e8ccb155d",
+    "upstream_sha256": null,
+    "size": 20575020
+  },
+  {
+    "file": "ffmpeg-7.0.2.tar.xz",
+    "url": "https://ffmpeg.org/releases/ffmpeg-7.0.2.tar.xz",
+    "sha256": "8646515b638a3ad303e23af6a3587734447cb8fc0a0c064ecdb8e95c4fd8b389",
+    "size": 10795332,
+    "upstream_sha256": null
+  },
+  {
+    "file": "ffmpeg-n7.0.2.tar.gz",
+    "url": "https://codeload.github.com/FFmpeg/FFmpeg/tar.gz/refs/tags/n7.0.2",
+    "sha256": "5eb46d18d664a0ccadf7b0adee03bd3b7fa72893d667f36c69e202a807e6d533",
+    "upstream_sha256": null,
+    "size": 15572160
+  }
+]

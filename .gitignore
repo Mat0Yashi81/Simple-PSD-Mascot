@@ -1,0 +1,63 @@
+# Python / local environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Build outputs, reports and release archives (publish archives via Releases)
+/dist/
+/build/
+/work/
+/outputs/
+/packages-final/
+/.test-work/
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tar.xz
+*.exe
+*.dll
+*.pyd
+*.log
+
+# User data and third-party source bundles
+/logs/
+/cache/*
+!/cache/README.txt
+/voice/*
+!/voice/README.txt
+*.psd
+*.psb
+*.wav
+*.mp3
+*.ogg
+app-settings.json
+character.json
+/third-party-sources/
+/source-bundle-licenses/
+
+# Credentials / local machine configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+credentials.json
+secrets.json
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Preserve all upstream notices, including source archive names used as folders
+!/licenses/
+!/licenses/**
