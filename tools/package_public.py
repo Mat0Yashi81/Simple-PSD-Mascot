@@ -31,9 +31,9 @@ def package(source,release,sources,output):
     for name in ['licenses','voice','cache']:
         shutil.copytree(source/name,release/name)
     output.mkdir(parents=True,exist_ok=True)
-    windows_zip=output/'Simple-PSD-Mascot-v1.0.0-windows.zip'
-    source_zip=output/'Simple-PSD-Mascot-v1.0.0-source.zip'
-    corresponding_zip=output/'Simple-PSD-Mascot-v1.0.0-third-party-sources.zip'
+    windows_zip=output/'Simple-PSD-Mascot-v1.0.1-windows.zip'
+    source_zip=output/'Simple-PSD-Mascot-v1.0.1-source.zip'
+    corresponding_zip=output/'Simple-PSD-Mascot-v1.0.1-third-party-sources.zip'
     for p in [windows_zip,source_zip,corresponding_zip]:
         if p.exists():raise RuntimeError('Refusing to overwrite '+str(p))
     # Check final runtime layout before writing archives.

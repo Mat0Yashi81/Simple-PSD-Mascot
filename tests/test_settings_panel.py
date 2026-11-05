@@ -53,7 +53,7 @@ class SettingsTests(unittest.TestCase):
    perf.set_enabled(True)
    with perf.session('bulk_cache'):perf.count('probe')
    files=list(logs.glob('*.json'));self.assertEqual(len(files),1)
-   original=files[0].read_bytes();self.assertEqual(json.loads(original)['app_version'],'1.0.0')
+   original=files[0].read_bytes();self.assertEqual(json.loads(original)['app_version'],'1.0.1')
    with perf.session('bulk_cache'):perf.set_enabled(False)
    self.assertEqual(len(list(logs.glob('*.json'))),1)
    with perf.session('bulk_cache'):perf.set_enabled(True)
@@ -88,7 +88,7 @@ class SettingsTests(unittest.TestCase):
     self.assertEqual(w.presets,{'keep':{}});self.assertEqual(w.expression_presets,{'keep':{}})
     for folder in ('cache','voice'):self.assertEqual((root/folder/'keep.txt').read_text(encoding='utf-8'),'keep')
     w.close();w.deleteLater();QCoreApplication.sendPostedEvents(None,QEvent.Type.DeferredDelete)
-    self.assertEqual(json.loads(new.read_text(encoding='utf-8')),DEFAULTS)
+    self.assertEqual(json.loads(new.read_text(encoding='utf-8')),{**DEFAULTS,'last_psd_path':None})
     self.assertEqual(old.read_bytes(),original)
 
 if __name__=='__main__':unittest.main()

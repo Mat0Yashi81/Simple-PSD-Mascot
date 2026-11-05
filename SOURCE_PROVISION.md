@@ -17,8 +17,8 @@ Windows ZIPに、ライブラリのソース `third-party-sources/`、自作ア�
 
 | 配布先 | ファイル | 取得するもの |
 |---|---|---|
-| BOOTH | `Simple-PSD-Mascot-v1.0.0-windows.zip` | exe、ライブラリ、ライセンス、自作ソース、第三者ソースを同じZIPから取得 |
-| GitHub Releases | `Simple-PSD-Mascot-v1.0.0-source.zip` と `Simple-PSD-Mascot-v1.0.0-third-party-sources.zip` | 前者が自作ソース/表示/手順、後者が第三者ソース実体。両方を同じReleaseに掲載 |
+| BOOTH | `Simple-PSD-Mascot-v1.0.1-windows.zip` | exe、ライブラリ、ライセンス、自作ソース、第三者ソースを同じZIPから取得 |
+| GitHub Releases | `Simple-PSD-Mascot-v1.0.1-source.zip` と `Simple-PSD-Mascot-v1.0.1-third-party-sources.zip` | 前者が自作ソース/表示/手順、後者が第三者ソース実体。両方を同じReleaseに掲載 |
 
 GitHub自作ソースZIPにDLLやexeは含めない。単体に第三者ソース実体がないことを明示し、
 同じReleaseの対応ソースZIPを案内する。Windows ZIPはBOOTHだけで必要情報が揃うため、

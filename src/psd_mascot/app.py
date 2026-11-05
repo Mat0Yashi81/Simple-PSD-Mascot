@@ -546,6 +546,8 @@ class MascotApp(QMainWindow):
         self._refresh_idle()
         self.file_label.setText(path.name)
         self.statusBar().showMessage(f"{path.name}  ({psd.width} × {psd.height})")
+        self.last_psd_path = str(self.psd_path)
+        self._save_app_settings()
         self._start_warmup()
 
     def _populate_layers(self) -> None:
@@ -1160,7 +1162,7 @@ class MascotApp(QMainWindow):
 
     def _app_settings_path(self) -> Path:
         base = settings_directory()
-        return base / "v0.4.1" / "app-settings.json"
+        return base / "app-settings.json"
 
     def _load_app_settings(self) -> None:
         path = self._read_settings_path(self._app_settings_path())
@@ -1169,6 +1171,8 @@ class MascotApp(QMainWindow):
                 values = json.loads(path.read_text(encoding="utf-8"))
                 if isinstance(values, dict):
                     self.settings_panel.restore(values)
+                    last = values.get("last_psd_path")
+                    self.last_psd_path = last if isinstance(last, str) else None
         except (OSError, ValueError, TypeError) as exc:
             self.statusBar().showMessage(f"アプリ設定を読み込めませんでした: {exc}")
         self._apply_app_settings()
@@ -1179,7 +1183,7 @@ class MascotApp(QMainWindow):
             path.parent.mkdir(parents=True, exist_ok=True)
             temporary = path.with_suffix(".tmp")
             temporary.write_text(
-                json.dumps(self.settings_panel.values(), ensure_ascii=False, indent=2),
+                json.dumps({**self.settings_panel.values(), "last_psd_path": getattr(self, "last_psd_path", None)}, ensure_ascii=False, indent=2),
                 encoding="utf-8",
             )
             temporary.replace(path)
@@ -1193,16 +1197,42 @@ class MascotApp(QMainWindow):
         import hashlib
 
         digest = hashlib.sha256(str(self.psd_path).casefold().encode("utf-8")).hexdigest()[:20]
-        return base / "v0.4.1" / f"{digest}.json"
+        return base / f"{digest}.json"
 
     @staticmethod
     def _read_settings_path(path):
-        if not path.exists() and path.parent.name == "v0.4.1":
-            for version in ("v0.4.0", "v0.3.9", "v0.3.8", "v0.3.6", "v0.3.5", "v0.3.4", "v0.3.3", "v0.3.2", "v0.3.1", "v0.3.0", "v0.2.2"):
-                legacy = path.parent.parent / version / path.name
-                if legacy.exists():
+        # Prefer the unversioned file. Copy legacy data, never move or delete it.
+        if path.exists():
+            return path
+        versions = ("v0.4.1", "v0.4.0", "v0.3.9", "v0.3.8", "v0.3.6", "v0.3.5", "v0.3.4", "v0.3.3", "v0.3.2", "v0.3.1", "v0.3.0", "v0.2.2")
+        root = path.parent.parent if path.parent.name == "v0.4.1" else path.parent
+        for version in versions:
+            legacy = root / version / path.name
+            if legacy != path and legacy.is_file():
+                try:
+                    # Validate before migration; keep the original on any error.
+                    raw = legacy.read_bytes()
+                    if not isinstance(json.loads(raw.decode("utf-8")), dict):
+                        continue
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    temporary = path.with_suffix(".migration.tmp")
+                    temporary.write_bytes(raw)
+                    temporary.replace(path)
+                    return path
+                except (OSError, ValueError, TypeError):
                     return legacy
         return path
+
+    def restore_last_psd(self):
+        last = getattr(self, "last_psd_path", None)
+        if not last or self.psd is not None or self.job is not None or self._closing:
+            return
+        path = Path(last)
+        if not path.is_file():
+            QMessageBox.warning(self, "前回のPSDが見つかりません",
+                                f"前回使用したPSDが見つかりません。\n{path}\n\n「PSDを開く」からファイルを選び直してください。")
+            return
+        self.load_psd(path)
 
     def _reaction_tab_changed(self, _index):
         self.preview.set_editing(self.tabs.currentWidget() is self.reaction_panel)
@@ -1659,6 +1689,7 @@ def main() -> None:
     configure_application(app)
     window = MascotApp()
     window.show()
+    QTimer.singleShot(0, window.restore_last_psd)
     sys.exit(app.exec())
 
 

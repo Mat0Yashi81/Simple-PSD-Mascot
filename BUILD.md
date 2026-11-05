@@ -11,7 +11,7 @@ python -m venv .venv
 .\build.ps1
 ```
 
-`dist/Simple-PSD-Mascot-v1.0.0/` が実行用フォルダです。exeだけを取り出さないでください。
+`dist/Simple-PSD-Mascot-v1.0.1/` が実行用フォルダです。exeだけを取り出さないでください。
 `build.ps1` はビルド用PATHをWindowsのみに限定し、外部のQtや画像DLLの混入を抑えます。
 専用venvには他のPySide6世代・Pdf・WebEngineパッケージを追加しないでください。
 

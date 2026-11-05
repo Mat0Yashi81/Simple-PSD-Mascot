@@ -10,7 +10,7 @@ GitHubで自作ソース、BOOTHでWindows版を公開できると判断しま�
 ## ライセンス上必須のこと
 
 - MIT本文、第三者ライセンス文・著作権表示・利用通知を削除しない。
-- BOOTHへは `Simple-PSD-Mascot-v1.0.0-windows.zip` を丸ごと掲載する。
+- BOOTHへは `Simple-PSD-Mascot-v1.0.1-windows.zip` を丸ごと掲載する。
   LGPL対象版のソース、自作ソース、ビルド/差し替え情報はZIP内に同梱済み。
   ソース取得に追加料金を求めず、配布中にソースだけを除かない。
 - 公開ページにもQt/PySide6/FFmpegとLGPLの利用、ソースの取得場所を明示する。
@@ -22,8 +22,8 @@ GitHubで自作ソース、BOOTHでWindows版を公開できると判断しま�
 
 ## 今回採用する公開配置
 
-GitHubの同じReleaseに `Simple-PSD-Mascot-v1.0.0-source.zip` と
-`Simple-PSD-Mascot-v1.0.0-third-party-sources.zip` を掲載し、BOOTHにWindows ZIPを掲載する。
+GitHubの同じReleaseに `Simple-PSD-Mascot-v1.0.1-source.zip` と
+`Simple-PSD-Mascot-v1.0.1-third-party-sources.zip` を掲載し、BOOTHにWindows ZIPを掲載する。
 これで両方の利用者が第三者ソースも取得でき、問い合わせを減らせる。
 **GitHubで自作ソースだけを配る場合、そのこと自体からLGPLライブラリのソースを
 GitHubに同梱する義務が生じるわけではない。** 追加ZIPは利便性のための運用である。

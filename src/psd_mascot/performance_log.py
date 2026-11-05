@@ -114,7 +114,7 @@ def session(kind, source=None, **metadata):
         return
     logging_at_start = _enabled
     data = {
-        "schema": 1, "app_version": "1.0.0", "kind": kind,
+        "schema": 1, "app_version": "1.0.1", "kind": kind,
         "started_at": datetime.now().astimezone().isoformat(),
         "source": str(source) if source is not None else None,
         "metadata": metadata, "status": "completed",

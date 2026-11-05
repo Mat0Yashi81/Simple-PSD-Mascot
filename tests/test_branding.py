@@ -31,7 +31,7 @@ class BrandingTests(unittest.TestCase):
     with patch.object(module,'runtime_directory',return_value=root),patch.object(module.MascotApp,'_app_settings_path',lambda _:root/'settings/app-settings.json'),patch.object(module.MascotApp,'_data_path',lambda _:None):
      window=module.MascotApp()
      try:
-      self.assertEqual(window.windowTitle(),'Simple PSD Mascot v1.0.0')
+      self.assertEqual(window.windowTitle(),'Simple PSD Mascot v1.0.1')
       self.assertEqual(window.tray_icon.toolTip(),'Simple PSD Mascot')
       self.assertEqual([a.text() for a in window.tray_menu.actions()],['開く','終了'])
       for icon in [window.windowIcon(),window.tray_icon.icon(),window.mascot_window.windowIcon()]:self.assertFalse(icon.pixmap(32,32).isNull())

@@ -32,8 +32,8 @@ exe = EXE(pyz,a.scripts,[],exclude_binaries=True,name='Simple-PSD-Mascot',
           icon=str(root/'src/psd_mascot/assets/app-icon.ico'), version=str(root/'windows-version-info.txt'),
           debug=False,bootloader_ignore_signals=False,strip=False,upx=False,
           console=False,disable_windowed_traceback=False)
-coll = COLLECT(exe,a.binaries,a.datas,strip=False,upx=False,name='Simple-PSD-Mascot-v1.0.0')
+coll = COLLECT(exe,a.binaries,a.datas,strip=False,upx=False,name='Simple-PSD-Mascot-v1.0.1')
 # Apply a deterministic packaging patch and omit proprietary MS runtime files.
 import runpy
 normalize=runpy.run_path(str(root/'tools/normalize_msvc_imports.py'))['normalize']
-normalize(Path(DISTPATH)/'Simple-PSD-Mascot-v1.0.0')
+normalize(Path(DISTPATH)/'Simple-PSD-Mascot-v1.0.1')

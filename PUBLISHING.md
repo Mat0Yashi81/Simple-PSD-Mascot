@@ -5,8 +5,8 @@
 | 場所 | 掲載するもの |
 |---|---|
 | GitHubリポジトリ | 自作ソース、説明書、LICENSE、licenses、第三者一覧。実行時データは登録しない |
-| 同じGitHub Release | `Simple-PSD-Mascot-v1.0.0-source.zip` と `Simple-PSD-Mascot-v1.0.0-third-party-sources.zip` |
-| BOOTH | `Simple-PSD-Mascot-v1.0.0-windows.zip` 全体 |
+| 同じGitHub Release | `Simple-PSD-Mascot-v1.0.1-source.zip` と `Simple-PSD-Mascot-v1.0.1-third-party-sources.zip` |
+| BOOTH | `Simple-PSD-Mascot-v1.0.1-windows.zip` 全体 |
 
 対応ソースZIPは大きいため、Gitの通常ファイルにせずReleaseの添付ファイルにします。
 GitHub自動生成の「Source code (zip)」だけでは、添付した第三者ソースまでは含まれません。
@@ -22,12 +22,12 @@ BOOTHだけで必要なソースを受け取れます。exeだけ、または `_
 ## GitHubのREADME / Release説明の記載例
 
 ```text
-Simple PSD Mascot v1.0.0 の自作コードはMITです。商用利用・改造・再配布・再販売を許可します。
+Simple PSD Mascot v1.0.1 の自作コードはMITです。商用利用・改造・再配布・再販売を許可します。
 著作権表示とライセンス文を保持してください。第三者部分は各ライセンスに従ってください。
 
-自作ソースは、このReleaseの Simple-PSD-Mascot-v1.0.0-source.zip にあります。
+自作ソースは、このReleaseの Simple-PSD-Mascot-v1.0.1-source.zip にあります。
 Qt/PySide6 6.7.3・FFmpeg 7.0.2等の対応ソースは、同じReleaseの
-Simple-PSD-Mascot-v1.0.0-third-party-sources.zip にあります。
+Simple-PSD-Mascot-v1.0.1-third-party-sources.zip にあります。
 BUILD.md、SOURCE_PROVISION.md、licenses/も参照してください。
 Qt/PySide6はLGPLv3、FFmpegはLGPLv2.1以降の条件で使用しています。
 ```
@@ -35,7 +35,7 @@ Qt/PySide6はLGPLv3、FFmpegはLGPLv2.1以降の条件で使用しています�
 ## BOOTHの商品説明の記載例
 
 ```text
-Simple PSD Mascot v1.0.0 は、ユーザーが用意したPSDを読み込むWindows x64用デスクトップマスコットです。
+Simple PSD Mascot v1.0.1 は、ユーザーが用意したPSDを読み込むWindows x64用デスクトップマスコットです。
 Pythonは不要です。Microsoft公式の最新Visual C++ x64ランタイムが必要です。
 PSD・音声素材は含まれません。ZIP全体を展開してexeを起動してください。
 

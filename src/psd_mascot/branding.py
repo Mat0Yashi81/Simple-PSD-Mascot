@@ -5,7 +5,7 @@ from PySide6.QtCore import QCoreApplication, QStandardPaths
 from PySide6.QtGui import QIcon
 
 APP_NAME = 'Simple PSD Mascot'
-APP_VERSION = '1.0.0'
+APP_VERSION = '1.0.1'
 WINDOW_TITLE = f'{APP_NAME} v{APP_VERSION}'
 WINDOWS_APP_ID = 'Mat0Yashi_81.SimplePSDMascot'
 LEGACY_NAME = 'PSD Mascot'

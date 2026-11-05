@@ -14,7 +14,7 @@ try {
     & $buildPython -I -m PyInstaller --noconfirm --clean `
         --distpath dist --workpath work\pyinstaller public-release.spec
     if ($LASTEXITCODE -ne 0) { throw 'exeのビルドに失敗しました。' }
-    & $buildPython -I tools\audit_distribution.py dist\Simple-PSD-Mascot-v1.0.0
+    & $buildPython -I tools\audit_distribution.py dist\Simple-PSD-Mascot-v1.0.1
     if ($LASTEXITCODE -ne 0) { throw '配布物の監査に失敗しました。' }
 }
 finally {
